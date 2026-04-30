@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OnlineSchoolCrm.Domain.Common;
+﻿using OnlineSchoolCrm.Domain.Common;
 namespace OnlineSchoolCrm.Domain.Tenant
 {
     public sealed class Tenant: Entity
