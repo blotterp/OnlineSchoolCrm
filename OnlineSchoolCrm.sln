@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm", "OnlineSchoolCrm\OnlineSchoolCrm.csproj", "{316D9CD9-4A62-42A2-B2F7-DB91BC08A203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm.Domain", "OnlineSchoolCrm.Domain\OnlineSchoolCrm.Domain.csproj", "{F5FF134E-44FE-488F-ABD3-94FAB417C9EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm.Application", "OnlineSchoolCrm.Application\OnlineSchoolCrm.Application.csproj", "{1F064BDD-57EC-4F78-A355-7B9860B86638}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm.Infrastructure", "OnlineSchoolCrm.Infrastructure\OnlineSchoolCrm.Infrastructure.csproj", "{47E2F35F-555D-48B3-A995-D4D9B3395217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm.Persistence", "OnlineSchoolCrm.Persistence\OnlineSchoolCrm.Persistence.csproj", "{81188262-619E-4AA0-876E-C5FFFACFC477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OnlineSchoolCrm.UnitTests", "OnlineSchoolCrm.UnitTests\OnlineSchoolCrm.UnitTests.csproj", "{E08B53DF-C389-4572-A0EC-4289D2375211}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{316D9CD9-4A62-42A2-B2F7-DB91BC08A203}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{316D9CD9-4A62-42A2-B2F7-DB91BC08A203}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{316D9CD9-4A62-42A2-B2F7-DB91BC08A203}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{316D9CD9-4A62-42A2-B2F7-DB91BC08A203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5FF134E-44FE-488F-ABD3-94FAB417C9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5FF134E-44FE-488F-ABD3-94FAB417C9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5FF134E-44FE-488F-ABD3-94FAB417C9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5FF134E-44FE-488F-ABD3-94FAB417C9EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F064BDD-57EC-4F78-A355-7B9860B86638}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F064BDD-57EC-4F78-A355-7B9860B86638}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F064BDD-57EC-4F78-A355-7B9860B86638}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F064BDD-57EC-4F78-A355-7B9860B86638}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47E2F35F-555D-48B3-A995-D4D9B3395217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47E2F35F-555D-48B3-A995-D4D9B3395217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47E2F35F-555D-48B3-A995-D4D9B3395217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47E2F35F-555D-48B3-A995-D4D9B3395217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81188262-619E-4AA0-876E-C5FFFACFC477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81188262-619E-4AA0-876E-C5FFFACFC477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81188262-619E-4AA0-876E-C5FFFACFC477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81188262-619E-4AA0-876E-C5FFFACFC477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E08B53DF-C389-4572-A0EC-4289D2375211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E08B53DF-C389-4572-A0EC-4289D2375211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E08B53DF-C389-4572-A0EC-4289D2375211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E08B53DF-C389-4572-A0EC-4289D2375211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {061B87CA-849C-4219-B761-EE36A4F172E7}
+	EndGlobalSection
+EndGlobal
