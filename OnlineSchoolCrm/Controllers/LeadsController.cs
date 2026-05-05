@@ -1,7 +1,9 @@
 ﻿using MediatR;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OnlineSchoolCrm.Application.Crm.Leads.CreateLead;
+using OnlineSchoolCrm.Application.Crm.Leads.GetLead;
+using OnlineSchoolCrm.Application.Crm.Leads.GetLeads;
+
 
 namespace OnlineSchoolCrm.Controllers
 {
@@ -40,12 +42,25 @@ namespace OnlineSchoolCrm.Controllers
 
         [HttpGet("{id:guid}")]
 
-        public IActionResult GetById(Guid id)
+        public async Task <IActionResult> GetById(Guid id, CancellationToken cancellationToken)
         {
-            return Ok(new { Id = id });
+            var lead = await _sender.Send(new GetLeadByIdQuery(id, cancellationToken));
+
+            if (lead is null)
+                return NotFound();
+
+            return Ok(lead);
         }
 
-       
+        [HttpGet]
+        public async Task<IActionResult> GetAll(CancellationToken cancellationToken)
+        {
+            var leads = await _sender.Send(new GetLeadsQuery(), cancellationToken);
+
+            return Ok(leads);
+        }
+
+
 
         public record CreateLeadRequest
         (
