@@ -2,6 +2,8 @@
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OnlineSchoolCrm.Persistence.Database;
+using OnlineSchoolCrm.Application.Abstractions.Data;
+using OnlineSchoolCrm.Persistence.Repositories;
 
 namespace OnlineSchoolCrm.Persistence;
 
@@ -20,6 +22,9 @@ public static class DependencyInjection
         {
             options.UseNpgsql(connectionString);
         });
+        services.AddScoped<ITenantRepository, TenantRepository>();
+        services.AddScoped<ILeadRepository, LeadRepository>();
+        services.AddScoped<IUnitOfWork, UnitOfWork>();
         return services;
     }
 }
