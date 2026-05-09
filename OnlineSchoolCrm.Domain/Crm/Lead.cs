@@ -23,8 +23,8 @@ namespace OnlineSchoolCrm.Domain.Crm
                 throw new ArgumentNullException("Parent name is required", nameof(parentName));
             if (string.IsNullOrWhiteSpace(phone))
                 throw new ArgumentNullException("Phone is required", nameof(phone));
-            if (childAge is <= 0 or > 18)
-                throw new ArgumentException("Child are must between 1 and 18",nameof(childAge));
+            if (childAge is <= 7 or > 18)
+                throw new ArgumentException("Child are must between 7 and 18",nameof(childAge));
             TenantId = tenantId;
             ParentName = parentName.Trim();
             Phone = phone.Trim();
